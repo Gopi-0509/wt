@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To demonstrate window object</title>
+        <script>
+            let mywindow;
+            function open_fun(){
+                mywindow=window.open("","","width=200px,height=100px");
+            }
+            function move(){
+                mywindow.moveBy(100,100)
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="open_fun()">open</button>
+        <button onclick="move()">move</button>
+    </body>
